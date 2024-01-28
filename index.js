@@ -20,7 +20,7 @@ connectToDb((err) => {
   }
 });
 
-app.use(cors({ origin: "https://social-conekktt.onrender.com" }));
+app.use(cors({ origin: "http://localhost:3000" }));
 
 // Routes
 app.get("/users", (req, res) => {
