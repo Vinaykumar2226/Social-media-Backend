@@ -109,3 +109,13 @@ app.get("/posts/:email", (req, res) => {
     })
     .catch((err) => res.status(500).json({ error: "Could not fetch" }));
 });
+
+app.get("/vinay/dummydata", (req, res) => {
+  const responseData = {
+    name: "Vinay",
+    some: "thing"
+  };
+
+  res.status(200).json(responseData);
+});
+
